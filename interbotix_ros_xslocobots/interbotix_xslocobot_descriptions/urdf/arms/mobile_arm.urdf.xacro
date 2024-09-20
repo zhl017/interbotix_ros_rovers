@@ -29,7 +29,7 @@
           <child link="${robot_name}/arm_base_link"/>
         </joint>
       </xacro:if> <!-- arm_type == 'mobile_rx200' -->
-      <xacro:if value="${arm_type != 'mobile_rx200}"}>
+      <xacro:if value="${arm_type != 'mobile_rx200'}"}>
         <joint name="arm_stand_link_joint" type="fixed">
           <axis xyz="0 0 0"/>
           <origin rpy="0 0 0" xyz="0.092002 0 0.007763"/>
