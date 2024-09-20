@@ -14,7 +14,7 @@
     <link name="${robot_name}/plate_link">
       <visual>
         <origin
-          rpy="0 0 0"
+          rpy="0 0 $(pi/2)"
           xyz="0 0 0"/>
         <geometry>
           <mesh
@@ -25,7 +25,7 @@
       </visual>
       <collision>
         <origin
-          rpy="0 0 0"
+          rpy="0 0 $(pi/2)"
           xyz="0 0 0"/>
         <geometry>
           <mesh
