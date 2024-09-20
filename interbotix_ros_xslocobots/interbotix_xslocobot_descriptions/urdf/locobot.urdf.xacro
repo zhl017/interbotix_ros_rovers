@@ -34,7 +34,7 @@
     <xacro:include filename="$(find interbotix_xslocobot_descriptions)/urdf/idm_version/battery.urdf.xacro" />
     <xacro:include filename="$(find interbotix_xslocobot_descriptions)/urdf/idm_version/arm_cradle.urdf.xacro" />
     <xacro:include filename="$(find interbotix_xslocobot_descriptions)/urdf/idm_version/camera_tower.urdf.xacro" />
-    <xacro:include filename="$(find interbotix_xslocobot_descriptions)/urdf/idm_version/pan_and_tilt.urdf.xacro" />
+    <xacro:include filename="$(find interbotix_xslocobot_descriptions)/urdf/pan_and_tilt.urdf.xacro" />
   </xacro:if>
   <xacro:unless value ="${arm_type == 'mobile_rx200'}">
     <xacro:include filename="$(find interbotix_xslocobot_descriptions)/urdf/plate.urdf.xacro" />
