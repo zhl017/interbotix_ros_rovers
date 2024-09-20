@@ -18,7 +18,7 @@
           xyz="0 0 0"/>
         <geometry>
           <mesh
-            filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/${base_type}_version/locobot_base_plate.stl"
+            filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/idm_version/locobot_base_plate.stl"
             scale="${mesh_scale}"/>
         </geometry>
         <material name="interbotix_black"/>
@@ -29,7 +29,7 @@
           xyz="0 0 0"/>
         <geometry>
           <mesh
-            filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/${base_type}_version/locobot_base_plate.stl"
+            filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/idm_version/locobot_base_plate.stl"
             scale="${mesh_scale}"/>
         </geometry>
       </collision>
