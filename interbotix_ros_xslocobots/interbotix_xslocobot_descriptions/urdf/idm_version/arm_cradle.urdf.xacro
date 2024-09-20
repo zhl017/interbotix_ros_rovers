@@ -22,7 +22,7 @@
          <geometry>
            <mesh
             filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/idm_version/locobot_arm_cradle.stl"
-            scale="0.001 0.001 0.001"/>
+            scale="${mesh_scale}"/>
          </geometry>
          <material name="interbotix_black"/>
        </visual>
@@ -31,7 +31,7 @@
          <geometry>
            <mesh
             filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/idm_version/locobot_arm_cradle.stl"
-            scale="0.001 0.001 0.001"/>
+            scale="${mesh_scale}"/>
          </geometry>
        </collision>
        <inertial>
