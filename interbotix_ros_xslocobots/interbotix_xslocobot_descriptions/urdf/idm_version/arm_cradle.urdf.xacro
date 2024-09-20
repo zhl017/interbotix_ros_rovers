@@ -21,7 +21,7 @@
           xyz="0 0 0"/>
          <geometry>
            <mesh
-            filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/locobot_arm_cradle.stl"
+            filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/idm_version/locobot_arm_cradle.stl"
             scale="0.001 0.001 0.001"/>
          </geometry>
          <material name="interbotix_black"/>
@@ -30,7 +30,7 @@
          <origin rpy="0 0 0" xyz="0 0 0"/>
          <geometry>
            <mesh
-            filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/locobot_arm_cradle.stl"
+            filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/idm_version/locobot_arm_cradle.stl"
             scale="0.001 0.001 0.001"/>
          </geometry>
        </collision>
