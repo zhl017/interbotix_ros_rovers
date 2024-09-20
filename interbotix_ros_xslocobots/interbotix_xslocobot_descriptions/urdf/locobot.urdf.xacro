@@ -28,12 +28,22 @@
     <texture filename="package://interbotix_common_sim/media/materials/textures/interbotix_black.png"/>
   </material>
 
-  <xacro:include filename="$(find interbotix_xslocobot_descriptions)/urdf/plate.urdf.xacro" />
-  <xacro:include filename="$(find interbotix_xslocobot_descriptions)/urdf/lidar.urdf.xacro" />
-  <xacro:include filename="$(find interbotix_xslocobot_descriptions)/urdf/battery.urdf.xacro" />
-  <xacro:include filename="$(find interbotix_xslocobot_descriptions)/urdf/arm_cradle.urdf.xacro" />
-  <xacro:include filename="$(find interbotix_xslocobot_descriptions)/urdf/camera_tower.urdf.xacro" />
-  <xacro:include filename="$(find interbotix_xslocobot_descriptions)/urdf/pan_and_tilt.urdf.xacro" />
+  <xacro:if value ="${arm_type == 'mobile_rx200'}">
+    <xacro:include filename="$(find interbotix_xslocobot_descriptions)/urdf/idm_version/plate.urdf.xacro" />
+    <xacro:include filename="$(find interbotix_xslocobot_descriptions)/urdf/idm_version/lidar.urdf.xacro" />
+    <xacro:include filename="$(find interbotix_xslocobot_descriptions)/urdf/idm_version/battery.urdf.xacro" />
+    <xacro:include filename="$(find interbotix_xslocobot_descriptions)/urdf/idm_version/arm_cradle.urdf.xacro" />
+    <xacro:include filename="$(find interbotix_xslocobot_descriptions)/urdf/idm_version/camera_tower.urdf.xacro" />
+    <xacro:include filename="$(find interbotix_xslocobot_descriptions)/urdf/idm_version/pan_and_tilt.urdf.xacro" />
+  </xacro:if>
+  <xacro:unless value ="${arm_type == 'mobile_rx200'}">
+    <xacro:include filename="$(find interbotix_xslocobot_descriptions)/urdf/plate.urdf.xacro" />
+    <xacro:include filename="$(find interbotix_xslocobot_descriptions)/urdf/lidar.urdf.xacro" />
+    <xacro:include filename="$(find interbotix_xslocobot_descriptions)/urdf/battery.urdf.xacro" />
+    <xacro:include filename="$(find interbotix_xslocobot_descriptions)/urdf/arm_cradle.urdf.xacro" />
+    <xacro:include filename="$(find interbotix_xslocobot_descriptions)/urdf/camera_tower.urdf.xacro" />
+    <xacro:include filename="$(find interbotix_xslocobot_descriptions)/urdf/pan_and_tilt.urdf.xacro" />
+  </xacro:unless>
 
   <xacro:if value="${arm_type == 'mobile_wx250s'}">
     <xacro:property name="camera_tower_size" value="large"/>
