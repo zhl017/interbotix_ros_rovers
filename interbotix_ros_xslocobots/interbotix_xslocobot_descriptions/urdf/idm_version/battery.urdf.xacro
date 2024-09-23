@@ -15,7 +15,7 @@
       <visual>
         <origin
           rpy="0 0 0"
-          xyz="0 0 0"/>
+          xyz="-0.005 0 0"/>
         <geometry>
           <mesh
             filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/idm_version/locobot_battery.stl"
@@ -29,7 +29,7 @@
       <collision>
         <origin
           rpy="0 0 0"
-          xyz="0 0 0"/>
+          xyz="-0.005 0 0"/>
         <geometry>
           <mesh
             filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/idm_version/locobot_battery.stl"
@@ -39,7 +39,7 @@
       <inertial>
         <origin
           rpy="0 0 0"
-          xyz="0 0 0.016"/>
+          xyz="-0.005 0 0.016"/>
         <mass value="1.194"/>
         <inertia
           ixx="0.004312"
