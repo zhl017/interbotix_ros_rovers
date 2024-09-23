@@ -4,6 +4,9 @@
   <xacro:macro name="lidar" params="*origin">
 
     <joint name="lidar_tower" type="fixed">
+      <origin
+        rpy="0 0 0"
+        xyz="0 0 0.45"/>
       <xacro:insert_block name="origin"/>
       <parent
         link="${robot_name}/camera_tower_link"/>
@@ -15,7 +18,7 @@
       <visual>
         <origin
           rpy="0 0 0"
-          xyz="0 0 0"/>
+          xyz="-0.08 0 0"/>
         <geometry>
           <mesh
             filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/idm_version/locobot_lidar_tower.stl"
@@ -26,7 +29,7 @@
       <collision>
         <origin
           rpy="0 0 0"
-          xyz="0 0 0"/>
+          xyz="-0.08 0 0"/>
         <geometry>
           <mesh
             filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/idm_version/locobot_lidar_tower.stl"
@@ -51,7 +54,7 @@
     <joint name="lidar" type="fixed">
       <origin
         rpy="0 0 0"
-        xyz="0 0 0.09425"/>
+        xyz="-0.005 0 0.1"/>
       <parent
         link="${robot_name}/lidar_tower_link"/>
       <child
@@ -62,7 +65,7 @@
       <visual>
         <origin
           rpy="0 0 0"
-          xyz="0 0 0"/>
+          xyz="0 0 -0.05"/>
         <geometry>
           <mesh
             filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/idm_version/locobot_lidar.stl"
@@ -73,7 +76,7 @@
       <collision>
         <origin
           rpy="0 0 0"
-          xyz="0 0 -0.0091"/>
+          xyz="0 0 0"/>
         <geometry>
           <cylinder
             length="0.0408"
