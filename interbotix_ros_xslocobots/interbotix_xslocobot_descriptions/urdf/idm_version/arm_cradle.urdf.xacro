@@ -15,7 +15,7 @@
    <link name="${robot_name}/arm_cradle_link">
      <visual>
        <origin
-        rpy="0 0 ${pi/2}"
+        rpy="0 0 0"
         xyz="0 0 0"/>
        <geometry>
          <mesh
@@ -26,7 +26,7 @@
      </visual>
      <collision>
        <origin 
-        rpy="0 0 ${pi/2}" 
+        rpy="0 0 0" 
         xyz="0 0 0"/>
        <geometry>
          <mesh
