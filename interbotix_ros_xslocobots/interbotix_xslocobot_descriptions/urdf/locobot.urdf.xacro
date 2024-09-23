@@ -142,6 +142,16 @@
 
     </xacro:if> <!-- arm_type == 'mobile_wx200' -->
 
+    <xacro:if value="${arm_type == 'mobile_rx200'}">
+
+      <xacro:arm_cradle>
+        <origin
+          rpy="0 0 0"
+          xyz="0.0335 0 0.125"/>
+      </xacro:arm_cradle>
+
+    </xacro:if> <!-- arm_type == 'mobile_rx200' -->
+
   </xacro:if> <!-- arm_type != 'mobile_base' -->
 
   <!-- ********************************** Battery **********************************  -->
