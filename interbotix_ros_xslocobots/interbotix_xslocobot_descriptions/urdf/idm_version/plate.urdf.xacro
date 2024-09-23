@@ -15,7 +15,7 @@
       <visual>
         <origin
           rpy="0 0 0"
-          xyz="0 0 0"/>
+          xyz="0.01 0 0"/>
         <geometry>
           <mesh
             filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/idm_version/locobot_base_plate.stl"
@@ -26,7 +26,7 @@
       <collision>
         <origin
           rpy="0 0 0"
-          xyz="0 0 0"/>
+          xyz="0.01 0 0"/>
         <geometry>
           <mesh
             filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/idm_version/locobot_base_plate.stl"
