@@ -24,7 +24,7 @@
       <xacro:if value="${arm_type == 'mobile_rx200'}">
         <joint name="arm_base_link_joint" type="fixed">
           <axis xyz="0 0 0"/>
-          <origin rpy="0 0 0" xyz="0.17 0 0.158"/>
+          <origin rpy="0 0 0" xyz="0.075 0 0.05"/>
           <parent link="${robot_name}/plate_link"/>
           <child link="${robot_name}/arm_base_link"/>
         </joint>
